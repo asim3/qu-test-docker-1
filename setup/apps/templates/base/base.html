@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<html lang="{{ LANGUAGE_CODE }}">
+
+{% include "base/head.html" %}
+
+{% if LANGUAGE_CODE|slice:":2" == 'ar' %}
+  <body class="" style="direction: rtl;text-align: right;">
+{% else %}
+  <body class="" style="direction: ltr;text-align: left;">
+{% endif %}
+
+    <nav class="navbar navbar-expand-lg bg-color-header text-color-header">
+        
+        {% include "base/header.html" %}
+
+    </nav>
+    
+    
+    <div id="messages" class="container">
+    
+        {% include "base/messages.html" %}
+    
+    </div>
+
+
+
+    {% block content %}
+    
+        {% include "home/home.html" %}
+    
+    {% endblock %}
+
+
+
+    <div id="pagination_root" class="container">
+
+        {% block pagination %}
+            
+            {% include "base/paginator.html" %}
+        
+        {% endblock %}
+
+    </div>
+
+
+
+    <footer class="bg-color-header text-color-header py-5">
+
+        {% include "base/footer.html" %}
+    
+    </footer>
+
+
+</body>
+</html>
