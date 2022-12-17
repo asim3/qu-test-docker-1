@@ -17,7 +17,7 @@ Django Template
 
 
 ## Config Vars (env)
-- `DJANGO_SETTINGS_MODULE` = `my_project_name.settings.production`
+- `DJANGO_SETTINGS_MODULE` = `test_k8s_1.settings.production`
 - `DJANGO_SECRET_KEY` = `********`
 - `REST_SIGNING_KEY` = `********`
 - `EMAIL_HOST_PASSWORD` = `********`

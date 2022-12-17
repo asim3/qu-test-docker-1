@@ -2,7 +2,7 @@ SHELL=/bin/bash
 
 ACTIVATE=source ./.venv/bin/activate &&
 
-PROJECT_NAME=my_project_name
+PROJECT_NAME=test_k8s_1
 
 CD=${ACTIVATE} cd ./${PROJECT_NAME} &&
 

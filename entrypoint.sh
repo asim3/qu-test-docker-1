@@ -14,4 +14,4 @@ python manage.py makemigrations \
 
 python manage.py runserver 0.0.0.0:8000
 
-# gunicorn --bind :8000 --workers 3 my_project_name.wsgi
+# gunicorn --bind :8000 --workers 3 test_k8s_1.wsgi
